@@ -1,3 +1,4 @@
+import './components/Expenses.css';
 import Expenses from "./components/Expenses";
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <Expenses items={expenses}/>
+      <div className="expenses">{expenses.map((expense) => <Expenses item={expense} />)}</div>
     </div>
   );
 }
