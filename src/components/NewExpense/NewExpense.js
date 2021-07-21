@@ -23,21 +23,6 @@ const NewExpense = (props) => {
         setFormIsActive(false);
     }
 
-
-    /*
-    Need:
-
-    div with a button
-
-    initial state = hasButtonDiv
-
-    onClick -> show ExpenseForm (state=noButtonDiv)
-        ExpenseForm: 
-            Cancel onClick -> showButtonDiv (hasButtonDiv)
-            Submit onClick -> showButtonDiv (hasButtonDiv)
-    
-    */ 
-
     return (
         <div className="new-expense">
             <div>
